@@ -1,0 +1,19 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  data:
+    web:
+      pageable:
+        one-indexed-parameters: true
+        # false가 기본값(0부터 시작)
+        # web 요청으로 page 값이 1로 날아왔을 때, 내부적으로 0으로 바꿈, 그래서 테스트에서 수동으로 1로 설정해도 의미없음
+        default-page-size: 5
+
+  datasource:
+    url: jdbc:h2:mem:selfstudy
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
