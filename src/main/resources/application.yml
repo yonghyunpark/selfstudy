@@ -1,4 +1,12 @@
+server:
+  servlet:
+    encoding:
+      force: true
+
 spring:
+  devtools:
+    restart:
+      enabled: true
   h2:
     console:
       enabled: true

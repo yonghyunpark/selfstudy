@@ -1,4 +1,4 @@
-package com.selfstudy.repository;
+package com.selfstudy.repository.post;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.selfstudy.domain.Post;
@@ -14,7 +14,7 @@ public class PostRepositoryImpl implements PostRepositoryCustom{
     private final JPAQueryFactory jpaQueryFactory;
 
     @Override
-    public List<Post> getLst(PostSearch postSearch) {
+    public List<Post> getList(PostSearch postSearch) {
         // select, from이 같이 적용
         return jpaQueryFactory.selectFrom(QPost.post)
                 .limit(postSearch.getSize()) // limit - 출력 갯수

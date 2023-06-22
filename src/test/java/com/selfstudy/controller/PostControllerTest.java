@@ -2,7 +2,7 @@ package com.selfstudy.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.selfstudy.domain.Post;
-import com.selfstudy.repository.PostRepository;
+import com.selfstudy.repository.post.PostRepository;
 import com.selfstudy.request.PostCreate;
 import com.selfstudy.request.PostEdit;
 import org.hamcrest.Matchers;

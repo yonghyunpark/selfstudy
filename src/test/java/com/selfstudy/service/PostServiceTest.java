@@ -2,12 +2,11 @@ package com.selfstudy.service;
 
 import com.selfstudy.domain.Post;
 import com.selfstudy.exception.PostNotFound;
-import com.selfstudy.repository.PostRepository;
+import com.selfstudy.repository.post.PostRepository;
 import com.selfstudy.request.PostCreate;
 import com.selfstudy.request.PostEdit;
 import com.selfstudy.request.PostSearch;
 import com.selfstudy.response.PostResponse;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -1,10 +1,31 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Self Study</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
-<body>
-    <h1>Self Study</h1>
-</body>
-</html>
+{{>layout/header}}
+
+<h1>Self Study</h1>
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-6">
+            <a href="/exams/enroll" role="button" class="btn btn-primary">내 시험</a>
+        </div>
+    </div>
+    <br>
+    <!-- 목록 출력 영역 -->
+    <table class="table table-horizontal table-bordered">
+        <thead class="thead-strong">
+        <tr>
+            <th>번호</th>
+            <th>시험이름</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        {{#exam}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+            </tr>
+        {{/exam}}
+        </tbody>
+    </table>
+
+</div>
+
+{{>layout/footer}}

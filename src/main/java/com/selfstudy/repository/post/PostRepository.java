@@ -1,4 +1,4 @@
-package com.selfstudy.repository;
+package com.selfstudy.repository.post;
 
 import com.selfstudy.domain.Post;
 import org.springframework.data.jpa.repository.JpaRepository;

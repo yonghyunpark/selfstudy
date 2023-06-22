@@ -1,9 +1,8 @@
 package com.selfstudy.service;
 
 import com.selfstudy.domain.Post;
-import com.selfstudy.domain.PostEditor;
 import com.selfstudy.exception.PostNotFound;
-import com.selfstudy.repository.PostRepository;
+import com.selfstudy.repository.post.PostRepository;
 import com.selfstudy.request.PostCreate;
 import com.selfstudy.request.PostEdit;
 import com.selfstudy.request.PostSearch;
@@ -59,7 +58,7 @@ public class PostService {
 
     public List<PostResponse> getList(PostSearch postSearch) {
 
-        return postRepository.getLst(postSearch).stream()
+        return postRepository.getList(postSearch).stream()
                 .map(PostResponse::new)
                 .collect(Collectors.toList());
     }
